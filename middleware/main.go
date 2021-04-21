@@ -21,16 +21,48 @@ RESULTADO ESPERADO:
     }
 }
 
+
+RUTA DE PRUEBA - MIDDLEWARE
+http://localhost:3000/hello
+
+RESULTADO ESPERADO
+Missing or malformed JWT - 400 Bad Request
+
+Una vez definido un ErrorHandler podemos devolver un solo tipo de error
+
 */
 
 
 import (
 	"time"
 	"github.com/gofiber/fiber"
-	"github.com/dgrijalva/jwt-go"
+	"github.com/dgrijalva/jwt-go" // Con esto creamos el token
+	jwtware "github.com/gofiber/jwt" // Con esto creamos el middleware
 )
  
 const jwtSecret = "asecret"
+
+// Metodo Middleware
+func authRequired() func(ctx *fiber.Ctx){
+	/* 
+	Filter: nil,
+	SuccessHandler: nil,
+	SigningKeys: nil,
+	SigningMethod: "",
+	ContextKey: "",
+	Claims: nil,
+	TokenLookup: "",
+	AuthScheme: "", 
+	*/
+	return jwtware.New(jwtware.Config{	
+		ErrorHandler: func(ctx *fiber.Ctx, err error){
+			ctx.Status(fiber.StatusUnauthorized).JSON(fiber.Map{
+				"error":"Unauthorized",
+			})
+		},
+		SigningKey: []byte(jwtSecret),
+	})
+}
 
 func main(){
 	app := fiber.New()
@@ -40,6 +72,10 @@ func main(){
 	})
 
 	app.Post("/login", login)
+
+	app.Get("/hello", authRequired(), func(ctx *fiber.Ctx){
+		ctx.Send("Hello")
+	})
 
 	err := app.Listen( 3000 )
 	if err != nil {
