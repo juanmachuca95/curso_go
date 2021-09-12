@@ -21,4 +21,16 @@ func main() {
 	mapa := make(map[string]int)
 	mapa["Llave"] = 16
 	fmt.Printf("Mapa (key: Llave) (valor: %d)\n", mapa["Llave"])
+
+	/* Slices */
+	slices := []int{1, 2, 3}
+	for index, value := range slices {
+		fmt.Printf("Indice: %d - Valor: %d\n", index, value)
+	}
+
+	slices = append(slices, 100) // Agregar elemento a un slice
+	for index, value := range slices {
+		fmt.Printf("Indice: %d - Valor: %d\n", index, value)
+	}
+
 }
