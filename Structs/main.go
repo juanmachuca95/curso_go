@@ -8,7 +8,7 @@ type Employee struct {
 	name string
 }
 
-/* Functions Receiver and Pointer receiver*/
+/* Functions Receiver and Pointer receivers*/
 func (e *Employee) SetId(id int) {
 	e.id = id
 }
@@ -17,8 +17,10 @@ func main() {
 	e := Employee{}
 
 	fmt.Printf("%v\n", e) // Go asigna valores al crear, ej: id 0, "" -> retornara {0 }
+
 	e.id = 1
 	e.name = "Juan Gabriel"
+	fmt.Printf("%v\n", e)
 
 	e.SetId(1995)
 	fmt.Printf("%v\n", e)
