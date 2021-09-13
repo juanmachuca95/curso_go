@@ -31,6 +31,25 @@ import "testing"
 	Este comando nos mostrará un html con información aún más especifica
 	go tool cover -html=coverage.out
 
+
+	Para ver el uso de CPU del codigo que testeamos, usamos
+	go test -cpuprofile=cou.out
+
+	Para ver el resumen del uso del CPU:
+	go test go tool pprof cpu.out
+
+
+	Dentro de pprof escribimos top para ver como se han comportado los programas en nuestro test
+
+	(pprof) top
+
+	list Fibonacci 
+
+	web // para ver un reporte del análisis profiling
+
+	pdf // exporta el reporte del test
+
+	
 */
 func TestSum(t *testing.T) {
 	total := Sum(1, 2)
@@ -77,6 +96,23 @@ func TestGetMax(t *testing.T) { // DEbes escribir bien Test --> si pones Text no
 		max := GetMax(item.x, item.y)
 		if max != item.r {
 			t.Errorf("El test ha fallado, se esperaba %d pero se obtuvo %d\n", item.r, max)
+		}
+	}
+}
+
+func TestFibonacci(t *testing.T){
+	tables := []struct{
+		x int
+		r int
+	}{
+		{1, 1},
+		{8, 21},
+		{50, 12586269025},
+	}
+	for _, item := range tables {
+		fib := Fibonacci(item.x)
+		if fib != item.r {
+			t.Errorf("El test ha fallado, se esperaba %d pero se obtuvo %d\n", item.r, fib)
 		}
 	}
 }
