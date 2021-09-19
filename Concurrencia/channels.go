@@ -7,7 +7,7 @@ import "fmt"
 * Canales con buffer y si buffer
  */
 
-func main() {
+func function() {
 	/* Primer bloque
 	c := make(chan int)
 
