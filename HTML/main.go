@@ -8,6 +8,7 @@ import (
 type Todo struct {
 	Title string
 	Done  bool
+	Link  string
 }
 
 type TodoPageData struct {
@@ -16,18 +17,22 @@ type TodoPageData struct {
 }
 
 func main() {
-	tmpl := template.Must(template.ParseFiles("layout.html"))
+
+	fs := http.FileServer(http.Dir("./views/assets/"))
+	http.Handle("/views/assets/", http.StripPrefix("/views/assets/", fs))
+
+	tmpl := template.Must(template.ParseFiles("views/layout.html"))
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
+
 		data := TodoPageData{
-			PageTitle: "My TODO list",
+			PageTitle: "By Juan Machuca",
 			Todos: []Todo{
-				{Title: "Task 1", Done: false},
-				{Title: "Task 2", Done: true},
-				{Title: "Task 3", Done: true},
+				{Title: "User", Done: false, Link: "/user"},
+				{Title: "Hello World", Done: true, Link: "hello"},
+				{Title: "About Us", Done: true, Link: "about"},
 			},
 		}
-
 		tmpl.Execute(w, data)
 	})
 
