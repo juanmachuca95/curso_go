@@ -1,6 +1,7 @@
 package main
 
 import (
+	"log"
 	"net/http"
 	"text/template"
 )
@@ -18,13 +19,20 @@ type TodoPageData struct {
 
 func main() {
 
-	fs := http.FileServer(http.Dir("./views/assets/"))
-	http.Handle("/views/assets/", http.StripPrefix("/views/assets/", fs))
+	fs := http.FileServer(http.Dir("./assets/"))
+	http.Handle("/assets/", http.StripPrefix("/assets/", fs))
 
-	tmpl := template.Must(template.ParseFiles("views/layout.html"))
+	tmpl, err := template.ParseFiles(
+		"templates/home/index.html",
+		"templates/globals/footer.html",
+		"templates/globals/header.html",
+	)
+
+	if err != nil {
+		log.Fatalf("Error al complicar home : %s", err)
+	}
 
 	http.HandleFunc("/", func(w http.ResponseWriter, r *http.Request) {
-
 		data := TodoPageData{
 			PageTitle: "By Juan Machuca",
 			Todos: []Todo{
