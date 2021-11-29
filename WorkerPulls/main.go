@@ -6,7 +6,7 @@ func main() {
 	tasks := []int{2, 3, 4, 5, 7, 10, 12, 40}
 	jobs := make(chan int, len(tasks))
 	results := make(chan int, len(tasks))
-	nWorkers := 3
+	nWorkers := 4
 	for i := 1; i <= nWorkers; i++ {
 		go Worker(i, jobs, results)
 	}
