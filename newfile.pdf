@@ -1,0 +1,647 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-2" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="shortcut icon" type="image/png" href="https://igpj.corrientes.gob.ar/images/logoIcono.png"/>
+  <title>Ministerio De Justicia</title>
+  <meta id="csrf-token" content="alcHFhpL7d8xTxgRtUuTmFoyLpmL4GilT8S9ctqW">
+  <script type="application/x-javascript">
+  addEventListener("load", function () {
+   setTimeout(hideURLbar, 0);
+  }, false);
+
+  function hideURLbar() {
+   window.scrollTo(0, 1);
+  }
+
+  </script>
+  <!--//tags -->
+  <link href="https://igpj.corrientes.gob.ar/css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://igpj.corrientes.gob.ar/css/style.css" rel="stylesheet" type="text/css" media="all" />
+  <link href="https://igpj.corrientes.gob.ar/css/prettyPhoto.css" rel="stylesheet" type="text/css" />
+  <link href="https://igpj.corrientes.gob.ar/css/fontawesome.css" rel="stylesheet">
+  <link href="https://igpj.corrientes.gob.ar/css/bootstrap-datetimepicker.min.css" rel="stylesheet">
+   <link href="https://igpj.corrientes.gob.ar/css/animated/animate.min.css" rel="stylesheet">
+   
+
+       </head>
+
+<body>
+  <div class="top_header" id="home">
+
+    <!-- Fixed navbar -->
+
+
+    
+    <nav class="navbar navbar-default" role="navigation">
+  <div class="container"  style="z-index: 0">
+    <div class="navbar-header">
+    <div class="logo-w3layouts-agileits" style="position: relative;width: 90%;">
+      <a href="https://igpj.corrientes.gob.ar?0">
+        <img src="https://igpj.corrientes.gob.ar/images/encabezado-corrientes.png" alt="Encabezado" class="img-responsive ImagenHeader" >
+      </a>
+      <div class="top_header_texto">
+        Ministerio de Justicia y Derechos Humanos <br>
+        Inspección General de Personas Jurídicas
+      </div>
+    </div>
+  </div>
+</div>
+</nav>
+
+<nav class="navbar navbar-secundaria" role="navigation">
+  <div class="container col-md-12" id="barraPrincipal">
+    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false"
+    aria-controls="navbar">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+    <div class="collapse navbar-collapse col-md-12" id="menu">
+      <ul class="nav navbar-nav col-md-11">
+        <li><a href="https://igpj.corrientes.gob.ar">Inicio</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Institucional <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li>
+              <a href="https://igpj.corrientes.gob.ar/web/autoridades">Autoridades </a>
+            </li>
+
+            <li>
+              <a href="https://igpj.corrientes.gob.ar/web/inspecionGralPersonasJuridicas">Inspección General de Personas Jurídicas</a>
+            </li>
+
+            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Legislación</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="http://www.senadoctes.gov.ar/leyes.htm" target="_blank">Leyes (Senado Ctes)</a>
+                </li>
+                <li>
+                  <a href="http://www.infoleg.gov.ar/" target="_blank">Leyes Nacionales - Códigos (Infoleg)</a>
+                </li>
+                <li>
+                  <a href="http://www.hcdcorrientes.gov.ar/constituciones/cp/2007.pdf" target="_blank">Constitución Provincial (HCD)</a>
+                </li>
+                <li>
+                  <a href="http://www.infojus.gob.ar/nuevo-codigo-civil-y-comercial-de-la-nacion" target="_blank">Código Civil nuevo T.1 T.2 -Infojus</a>
+                </li>
+                <li>
+                  <a href="https://igpj.corrientes.gob.ar/PdfLegislacion/DECRETO LEY N 28-00.pdf" target="_blank">
+                      Decretos 28-00
+                  </a>
+                </li>
+                <li>
+                  <a href="https://igpj.corrientes.gob.ar/PdfLegislacion/DECRETO LEY N 1533 Res 2.pdf" target="_blank">
+                      Decretos 1533-00
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown">Trámites <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="https://igpj.corrientes.gob.ar/tramites">Guia de tramites SAS </a></li>
+            <!--li><a href="https://igpj.corrientes.gob.ar/tramites">TAD/GDE</a></li>
+            <li><a href="https://igpj.corrientes.gob.ar/web/ReparacionHistorica">Reparacion Historica ANSES</a></li>
+            <li class="dropdown dropdown-submenu"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Nacion</a>
+              <ul class="dropdown-menu">
+                <li>
+                  <a href="http://www.jus.gob.ar/tramites-y-servicios/automotores.aspx" target="_blank">Automotores</a>
+                </li>
+                <li>
+                  <a href="http://www.jus.gob.ar/tramites-y-servicios/derecho-de-autor.aspx" target="_blank">Derechos de Autor</a>
+                </li>
+                <li>
+                  <a href="http://www.jus.gob.ar/tramites-y-servicios/armas.aspx" target="_blank">Armas</a>
+                </li>
+              </ul>
+            </li-->
+          </ul>
+        </li>
+        <!-- <li><a href="https://igpj.corrientes.gob.ar/web/noticias">Noticias</a></li> -->
+        <li><a href="https://igpj.corrientes.gob.ar/galeria">Galería</a></li>
+        <li><a href="https://igpj.corrientes.gob.ar/web/archivos">Archivos</a></li>
+        
+        <li id="UlUser" class="dropdown" style="float: right;">
+
+                  <!-- <a data-toggle="modal"
+        data-target="#myModal"
+        style="cursor: pointer;"
+        id="botonLogin">
+        Iniciar Sesión
+      </a> -->
+          </li>
+      </ul>
+
+  </div><!-- /.navbar-collapse -->
+</div>
+</nav>
+    <div id="respuestaModal" class="modal fade" tabindex="-1" role="dialog" >
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title">Respuesta</h4>
+      </div>
+      <div class="modal-body">
+        <p id="respuestaLlamada"></p>
+      </div>
+      <div class="modal-footer">
+        <button id="BtnCerrarModalResp" type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+  </div>
+
+  <div class="container bs-docs-container">
+	<div class="row">
+    	<div class="col-md-12 col-sm-12">
+    		<article class="page" style="display: flex;">
+          <img class="img-responsive img-full" src="https://igpj.corrientes.gob.ar/images/error500.png" alt=""style="margin-left: auto;margin-right: auto;margin-top: 15px;width: 300px;height: 225;">
+        </article>
+      </div>
+  </div>
+</div>
+
+
+  <style>
+/* @import  url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,700,800'); */
+body, input, select, textarea {
+  font-family: "Raleway", Helvetica, sans-serif;
+
+  font-size: 12pt;
+  font-weight: 300;
+  line-height: 1.65em;
+}
+
+.icon {
+  text-decoration: none;
+  border-bottom: none;
+  position: relative;
+}
+
+.icon:before {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: FontAwesome;
+  font-style: normal;
+  font-weight: normal;
+  text-transform: none !important;
+}
+
+.icon > .label {
+  display: none;
+}
+
+.icon.rounded {
+  border-radius: 100%;
+  border: 1px solid #4dac71;
+  display: inline-block;
+  height: 2em;
+  line-height: 2em;
+  text-align: center;
+  width: 2em;
+}
+
+.icon.rounded.big {
+  font-size: 3.5em;
+}
+
+
+/* Lista */
+
+ol {
+  list-style: decimal;
+  margin: 0 0 2em 0;
+  padding-left: 1.25em;
+}
+
+ol li {
+  padding-left: 0.25em;
+}
+
+ul {
+  list-style: disc;
+
+  padding-left: 1em;
+}
+
+ul li {
+  padding-left: 0.5em;
+}
+
+ul.alt {
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.alt li {
+  border-top: solid 1px #fff;
+  padding: 0.8em 0;
+}
+
+ul.alt li:first-child {
+  border-top: 0;
+  padding-top: 0;
+}
+
+ul.icons {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.icons li {
+
+  padding: 0 1em 0 0;
+  margin-top: 18px;
+}
+
+ul.icons li:last-child {
+  padding-right: 0;
+}
+
+ul.actions {
+  cursor: default;
+  list-style: none;
+  padding-left: 0;
+}
+
+ul.actions li {
+  display: inline-block;
+  padding: 0 1em 0 0;
+  vertical-align: middle;
+}
+
+ul.actions li:last-child {
+  padding-right: 0;
+}
+
+ul.actions.small li {
+  padding: 0 0.5em 0 0;
+}
+
+ul.actions.vertical li {
+  display: block;
+  padding: 1em 0 0 0;
+}
+
+ul.actions.vertical li:first-child {
+  padding-top: 0;
+}
+
+ul.actions.vertical li > * {
+  margin-bottom: 0;
+}
+
+ul.actions.vertical.small li {
+  padding: 0.5em 0 0 0;
+}
+
+ul.actions.vertical.small li:first-child {
+  padding-top: 0;
+}
+
+ul.actions.fit {
+  display: table;
+  margin-left: -1em;
+  padding: 0;
+  table-layout: fixed;
+  width: calc(100% + 1em);
+}
+
+ul.actions.fit li {
+  display: table-cell;
+  padding: 0 0 0 1em;
+}
+
+ul.actions.fit li > * {
+  margin-bottom: 0;
+}
+
+ul.actions.fit.small {
+  margin-left: -0.5em;
+  width: calc(100% + 0.5em);
+}
+
+ul.actions.fit.small li {
+  padding: 0 0 0 0.5em;
+}
+
+ul.tabular {
+  list-style: outside none none;
+  padding: 0px;
+}
+
+ul.tabular li {
+  border-top: solid 1px #fff;
+  line-height: 15px;
+  margin: 1.5em 0px 0px;
+  padding-left: 35%;
+  padding-top: 12px;
+  position: relative;
+  width: 150%;
+}
+
+ul.tabular li:first-child {
+  border-top: 0;
+  margin-top: 0;
+}
+
+ul.tabular li h3 {
+  left: 0px;
+  position: absolute;
+  text-align: center;
+  top: 12px;
+  vertical-align: top;
+
+}
+#footer .container {padding-left: 0%;}
+
+
+#footer {
+  background: #73a952;
+  color: #fff;
+  padding: 3em 0em 3em;
+}
+
+#footer h2, #footer h3, #footer h4 {
+  color: #3e3e3e;
+  font-weight: bold;
+  font-size: 17px;
+
+}
+
+#footer a {
+  -moz-transition: all 0.2s ease-in-out;
+  -webkit-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer a:active, #footer a:hover {
+  color: #ffffff;
+}
+
+#footer .icons .rounded {
+  border-color: #3e3e3e;
+  font-size: 1.5em;
+}
+#footer .icons a { color:#3e3e3e !important;}
+
+
+
+#footer .icons .rounded:active, #footer .icons .rounded:hover {
+  border-color: #ffffff;
+  background-color: #fff;
+}
+
+#footer .copyright {
+  font-size: 0.9em;
+  margin: 5em 15em 0 0;
+  padding: 0;
+  text-align: center;
+
+}
+
+#footer .copyright li {
+  border-left: solid 1px #fff;
+  display: inline-block;
+  list-style: none;
+  margin-left: 1.5em;
+  padding-left: 1.5em;
+}
+
+#footer .copyright li:first-child {
+  border-left: 0;
+  margin-left: 0;
+  padding-left: 0;
+}
+
+
+.secciones {
+
+
+  margin-right: 2%;
+}
+
+.interes {
+
+
+  margin-right: 2%;
+}
+
+
+/************detalles responsive*************/
+
+@media (max-width: 1024px) {
+
+  ul.tabular li {
+
+    padding-left: 47%;
+    width: 150%;
+  }
+  .copyright {width: 100%; }
+}
+
+
+
+@media (max-width: 768px) {
+  .secciones {
+    width: 100%;
+    margin-right: 2%;
+  }
+  .interes {
+
+    width: 100%;
+    margin-right: 2%;
+  }
+  .copyright {
+    width: 100%;
+  }
+  .icons li {
+    display: inline !important;
+    margin-bottom: 5%;
+  }
+
+  ul.tabular li {
+    padding-left: 27%;
+    width: 100%;
+  }
+}
+@media (max-width: 430px){
+  ul.tabular li h3 {
+    position: initial;
+  }
+  ul.tabular li {
+    padding-left: 5%;
+    width: 100%;
+    text-align: center;
+  }
+  #footer .container {
+    padding-left: 10%;
+    text-align: center;
+  }
+}
+
+
+
+</style>
+
+<div class="row prefooter">
+  <div class="col-md-3 col-sm-3 col-xs-6 info wow fadeInLeft"><strong>911/101</strong>POLICÍA </div>
+  <div class="col-md-3 col-sm-3 col-xs-6 info wow fadeInLeft"><strong>100</strong>BOMBEROS </div>
+  <div class="col-md-3 col-sm-3 col-xs-6 info wow fadeInRight"><strong>103</strong>DEFENSA CIVIL</div>
+  <div class="col-md-3 col-sm-3 col-xs-6 info wow fadeInRight"><strong>107</strong> EMERGENCIAS</div>
+</div>
+<!DOCTYPE html>
+
+<!-- Footer -->
+
+<footer id="footer">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-1 col-md-1 col-xs-10 col-sm-10 col-xs-offset-2">
+          <ul class="icons">
+            <li><a href="https://www.facebook.com/corrientesgob" class="icon rounded"><i class="fab fa-facebook-f"></i><span class="label">Facebook</span></a></li>
+            <li><a href="https://twitter.com/CorrientesGob" class="icon rounded"><i class="fab fa-twitter"></i><span class="label">Twitter</span></a></li>
+
+          </ul></div>
+          <section class="secciones">
+            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+              <h3>Secciones</h3>
+
+              <ul class="alt">
+                <li><a href="#">Institucional</a></li>
+                <li><a href="#">Noticias</a></li>
+                <li><a href="#">Trámites</a></li>
+                <li><a href="#">Galería</a></li>
+                <li><a href="#">Archivos</a></li>
+              </ul>
+            </div></section>
+                          <section class="4u$ 12u$(medium) 12u$(small)">
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-8">
+                  <h3>Contacto - Inspección General de Persona Jurídica</h3>
+
+                  <ul class="tabular">
+                    <li>
+                      <h3>Dirección</h3>
+                      Av. 3 de Abril 1124-
+                      Corrientes Capital
+                    </li>
+                    <li>
+                      <h3>Mail</h3>
+                      <a href="#">sas.igpj@corrientes.gov.ar</a>
+                    </li>
+                    <li>
+                      <h3>Teléfono</h3>
+                      379 4231462
+                    </li>
+                    <li>
+                      <h3>Website</h3>
+                      www.igpj.corrientes.gov.ar
+                    </li>
+                  </ul>
+                </div></section>
+                <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                  <ul class="copyright">
+                    <li>&copy; 2018 Ministerio de Justicia y Derechos Humanos</li>
+                    <li>Desarrollado por <a style="cursor: pointer;" onclick="window.open('http://www.devlights.com/')">DEVLIGHTS</a></li>
+                    <li>Versión 1.0</li>
+                  </ul>
+                </div></div></div></div>
+              </footer>
+</div>
+<!-- //footer -->
+
+<script  type="text/javascript" src="https://igpj.corrientes.gob.ar/js/jquery-2.2.3.min.js"></script>
+<script  src="https://igpj.corrientes.gob.ar/js/all.js"></script>
+<script  type="text/javascript" src="https://igpj.corrientes.gob.ar/js/bootstrap.js"></script>
+
+<script  type="text/javascript" src="https://igpj.corrientes.gob.ar/js/loginRegister/loginRegister.js"></script>
+
+<!-- Smooth-Scrolling-JavaScript -->
+<!-- <script type="text/javascript" src="https://igpj.corrientes.gob.ar/js/easing.js"></script> -->
+<link href="https://igpj.corrientes.gob.ar/css/nanogallery2.min.css" rel="stylesheet">
+<script type="text/javascript" src="https://igpj.corrientes.gob.ar/js/jquery.nanogallery2.min.js"></script>
+<script type="text/javascript" src="https://igpj.corrientes.gob.ar/js/wow.min.js"> </script>
+
+<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+<script type="text/javascript">
+$(document).ready(function(){
+  new WOW().init();
+  $('ul.dropdown-menu [data-toggle=dropdown]').on('click', function(event) {
+    event.preventDefault();
+    event.stopPropagation();
+    $(this).parent().siblings().removeClass('open');
+    $(this).parent().toggleClass('open');
+  });
+});
+
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+});
+
+</script>
+<script type="text/javascript">
+$('#respuestaModal').modal({
+  keyboard: true,
+  show:false,
+  backdrop: 'static'
+});
+$('#respuestaModal').on('hidden.bs.modal', function (e) {
+  $("#respuestaLlamada").html("")
+  $("body").css("padding-right","0px")
+})
+</script>
+<!-- <script>
+// jQuery(document).ready(function ($) {
+// scrollSpeed: 1200,
+// easingType: 'linear',
+// };
+// $('ul.dropdown-menu li').hover(function () {
+//  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeIn(500);
+// }, function () {
+//  $(this).find('.dropdown-menu').stop(true, true).delay(200).fadeOut(500);
+// });
+</script> -->
+<!-- <script type="text/javascript">
+
+*/
+
+</script> -->
+<!-- <script type="text/javascript">
+$(".scroll, .navbar li a, .footer li a").click(function (event) {
+$('html,body').animate({
+scrollTop: $(this.hash).offset().top
+}, 1000);
+});
+</script> -->
+<!-- //Smooth-Scrolling-JavaScript -->
+<!-- <script type="text/javascript">
+$(document).ready(function () {
+var defaults = {
+containerID: 'toTop', // fading element id
+containerHoverID: 'toTopHover', // fading element hover id
+};
+});
+</script> -->
+
+</body>
+</html>
